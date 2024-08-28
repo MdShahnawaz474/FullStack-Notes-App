@@ -1,0 +1,97 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+html{
+  overflow-x: hidden;
+}
+:root{
+  --primary: #fff;
+  --seco: #F4F4F4;
+  --accents: #578DF7;
+}
+
+.form{
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: #fff;
+  width: 30%;
+  min-height: 30vh;
+}
+
+.inputBox{
+  background-color: #F4F4F4;
+  width: 100%;
+  display: flex;
+  margin-bottom:10px ;
+
+}
+
+
+
+.inputBox input{
+   flex: 1;
+   padding: 7px;
+   background-color: transparent;
+   outline: 0;
+   border: 0;
+}
+ 
+.btnBig{
+  width: 100%;
+  padding: 10px;
+  background-color:#578DF7 ;
+  color: #fff;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.btnNormal{
+  min-width: 130px;
+  padding: 10px;
+  background-color: var(--accents);
+  color: #fff;
+  border:0
+
+}
+
+.gridItems{
+  width: 100%;
+  padding: 0px 50px;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+}
+
+.gridItems.gridOne{
+  grid-template-columns: auto;
+}
+
+.gridItems .note{
+  width: 23vw;
+  background-color: var(--seco);
+  padding: 10px;
+  cursor: pointer;
+  height: 220px;
+}
+
+.sp-text{
+  color:var(--accents);
+}
+
+.checkBox.active{
+  background-color: #578DF7;
+}
