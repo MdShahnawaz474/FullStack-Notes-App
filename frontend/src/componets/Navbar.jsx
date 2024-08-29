@@ -7,6 +7,7 @@ const Navbar = () => {
   const onlineStatus = useOnlineStatus();
   const [btnNameReact, setBtnNameReact] = useState("Login");
 
+
   const [userData, setUserData] = useState(null);
   function getUserDetails() {
     fetch("http://localhost:8000/getUserDetails", {
@@ -61,6 +62,7 @@ const Navbar = () => {
           >
             Add Note
           </button>
+          {/* Login button */}
           <button
             className="login text-xl font-semibold"
             onClick={() => {
