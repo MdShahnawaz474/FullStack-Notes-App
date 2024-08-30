@@ -26,7 +26,7 @@ const Login = () => {
       alert("Login successfull");
       localStorage.setItem("token", data.token);
       localStorage.setItem("userID", data.userID);
-      navigate("/home");
+      navigate("/");
     }
     else {
       setErorr(data.message);
