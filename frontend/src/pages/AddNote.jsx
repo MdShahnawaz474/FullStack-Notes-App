@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import JoditEditor from 'jodit-react';
 import Navbar from "../componets/Navbar";
-import CheckBox from '../tools/checkBox';
+import CheckBox from '../tools/CheckBox';
 import { json, useNavigate } from 'react-router-dom';
 import Footer from '../componets/Footer';
 

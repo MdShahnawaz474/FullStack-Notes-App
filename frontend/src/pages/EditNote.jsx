@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import JoditEditor from 'jodit-react';
 import Navbar from '../componets/Navbar';
-import CheckBox from '../tools/checkBox';
+import CheckBox from '../tools/CheckBox';
 import { json, useNavigate, useParams } from 'react-router-dom';
 
 const EditNote = () => {
