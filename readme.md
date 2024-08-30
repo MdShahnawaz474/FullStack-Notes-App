@@ -36,5 +36,4 @@ Packages
     - Json Web token
     - Mongoose
     - Bcrypt (For Hashing)
-    - .env
     
