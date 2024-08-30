@@ -48,7 +48,7 @@ const Home = () => {
     }).then(response=>response.json()).then(data=>{
       if(data===false){
 
-        navigate("/")
+        navigate("/login")
 
       }else{
         setUserData(data )
