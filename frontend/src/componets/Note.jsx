@@ -11,7 +11,7 @@ const Note = ({note, height, index})=>{
 
     const deleteNote =(id,noteID)=>{
      console.log("ID:",id);
-     let res = fetch("http://localhost:8000/deleteNote",{
+     let res = fetch(`${import.meta.env.VITE_BACKEND_URL}/deleteNote`,{
      mode:"cors",
      method:"POST",
      headers:{

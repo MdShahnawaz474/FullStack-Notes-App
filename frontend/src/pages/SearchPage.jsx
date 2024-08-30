@@ -33,7 +33,7 @@ const SearchPage = () => {
   }, [data, myParam]);
 
   const getNotes = () => {
-    fetch("http://localhost:8000/getNotes", {
+    fetch(`${import.meta.env.VITE_BACKEND_URL}/getNotes`, {
       mode: "cors",
       method: "POST",
       headers: {

@@ -10,7 +10,7 @@ const Navbar = () => {
 
   const [userData, setUserData] = useState(null);
   function getUserDetails() {
-    fetch("http://localhost:8000/getUserDetails", {
+    fetch(`${import.meta.env.VITE_BACKEND_URL}/getUserDetails`, {
       mode: "cors",
       method: "POST",
       headers: {
@@ -32,6 +32,9 @@ const Navbar = () => {
   useEffect(() => {
     getUserDetails();
   }, []);
+
+  
+
   return (
     <>
       <div className="navbar w-screen h-[90px] bg-[#f4f4f4] px-[50px] flex items-center justify-between">
@@ -64,7 +67,7 @@ const Navbar = () => {
           </button>
           {/* Login button */}
           <button
-            className="login text-xl font-semibold"
+            className="login text-lg font-semibold"
             onClick={() => {
               if (btnNameReact === "Login") {
                 setBtnNameReact("Logout");

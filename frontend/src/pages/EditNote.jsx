@@ -17,7 +17,7 @@ const EditNote = () => {
 
   const submitForm = (e) => {
     e.preventDefault();
-    let res = fetch("http://localhost:8000/updateNote", {
+    let res = fetch(`${import.meta.env.VITE_BACKEND_URL}/updateNote`, {
       mode: "cors",
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -34,7 +34,7 @@ const EditNote = () => {
   };
 
   const getNote = () => {
-     let res = fetch("http://localhost:8000/getNote", {
+     let res = fetch(`${import.meta.env.VITE_BACKEND_URL}/getNote`, {
       mode: "cors",
       method: "POST",
       headers: { "Content-Type": "application/json" },

@@ -15,7 +15,7 @@ const Home = () => {
   const [userData, setUserData] = useState(null);
 
   let getNotes = () => {
-    let res = fetch("http://localhost:8000/getNotes", {
+    let res = fetch(`${import.meta.env.VITE_BACKEND_URL}/getNotes`, {
       mode: "cors",
       method: "POST",
       headers: {
@@ -36,7 +36,7 @@ const Home = () => {
   };
 
   function getUserDetails(){
-    fetch("http://localhost:8000/getUserDetails",{
+    fetch(`${import.meta.env.VITE_BACKEND_URL}/getUserDetails`,{
       mode:"cors",
       method:"POST",
       headers:{
@@ -48,7 +48,7 @@ const Home = () => {
     }).then(response=>response.json()).then(data=>{
       if(data===false){
 
-        navigate("/login")
+        navigate("/")
 
       }else{
         setUserData(data )

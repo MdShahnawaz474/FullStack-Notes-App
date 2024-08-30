@@ -1,0 +1,58 @@
+{
+  "hash": "24790def",
+  "configHash": "d3f5bd81",
+  "lockfileHash": "d2273e20",
+  "browserHash": "e76573b8",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "d19f159d",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "6a3c6c9e",
+      "needsInterop": true
+    },
+    "react-router-dom": {
+      "src": "../../node_modules/react-router-dom/dist/index.js",
+      "file": "react-router-dom.js",
+      "fileHash": "23006b3a",
+      "needsInterop": false
+    },
+    "jodit-react": {
+      "src": "../../node_modules/jodit-react/build/jodit-react.js",
+      "file": "jodit-react.js",
+      "fileHash": "62562f72",
+      "needsInterop": true
+    },
+    "html-react-parser": {
+      "src": "../../node_modules/html-react-parser/esm/index.mjs",
+      "file": "html-react-parser.js",
+      "fileHash": "37ac10fa",
+      "needsInterop": false
+    },
+    "react-avatar": {
+      "src": "../../node_modules/react-avatar/es/index.js",
+      "file": "react-avatar.js",
+      "fileHash": "35888dda",
+      "needsInterop": false
+    },
+    "react-icons/fa6": {
+      "src": "../../node_modules/react-icons/fa6/index.mjs",
+      "file": "react-icons_fa6.js",
+      "fileHash": "1db71da5",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-QPG7G3M7": {
+      "file": "chunk-QPG7G3M7.js"
+    },
+    "chunk-UTEJFLXC": {
+      "file": "chunk-UTEJFLXC.js"
+    }
+  }
+}

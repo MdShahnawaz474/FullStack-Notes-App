@@ -13,7 +13,7 @@ const SingleNotePage = () => {
   const [isDeleteModel, setIsDeleteModel] = useState(false)
   let{id} = useParams()
   function getNote(){
-    fetch("http://localhost:8000/getNote",{
+    fetch(`${import.meta.env.VITE_BACKEND_URL}/getNote`,{
       mode:"cors",
       method:"POST",
       headers:{
@@ -29,7 +29,7 @@ const SingleNotePage = () => {
 
   const deleteNote =(id)=>{
     console.log("ID:",id);
-    let res = fetch("http://localhost:8000/deleteNote",{
+    let res = fetch(`${import.meta.env.VITE_BACKEND_URL}/deleteNote`,{
     mode:"cors",
     method:"POST",
     headers:{

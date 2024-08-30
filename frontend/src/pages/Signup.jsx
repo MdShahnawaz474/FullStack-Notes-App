@@ -10,7 +10,7 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    let res = await fetch("http://localhost:8000/signUp", {
+    let res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/signUp`, {
       mode:'cors',
       method: "POST",
       headers: {

@@ -8,7 +8,7 @@ const Login = () => {
   let navigate = useNavigate()
   const handleSubmit = async(e)=>{
     e.preventDefault();
-    let res = await fetch("http://localhost:8000/login", {
+    let res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/login`, {
       mode:'cors',
       method: "POST",
       headers: {
@@ -26,7 +26,7 @@ const Login = () => {
       alert("Login successfull");
       localStorage.setItem("token", data.token);
       localStorage.setItem("userID", data.userID);
-      navigate("/");
+      navigate("/home");
     }
     else {
       setErorr(data.message);

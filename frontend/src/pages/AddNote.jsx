@@ -17,7 +17,7 @@ const AddNote = () => {
 
   const submitForm = (e) => {
     e.preventDefault();
-    let res = fetch("http://localhost:8000/addNote",{
+    let res = fetch(`${import.meta.env.VITE_BACKEND_URL}/addNote`,{
       mode:"cors",
       method:"POST",
       headers:{"Content-Type":"application/json"},

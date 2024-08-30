@@ -15,7 +15,7 @@ const Profile = () => {
     const navigate = useNavigate();
   
     function getUserDetails() {
-      fetch("http://localhost:8000/getUserDetails",{mode:"cors",method:"POST",headers:{
+      fetch(`${import.meta.env.VITE_BACKEND_URL}/getUserDetails`,{mode:"cors",method:"POST",headers:{
         "Applicatiosn-Type":"application/json",
         "Content-Type":"application/json"
       },
@@ -26,7 +26,7 @@ const Profile = () => {
     }
   
     function getNotes() {
-      fetch("http://localhost:8000/getNotes",{mode:"cors",method:"POST",headers:{
+      fetch(`${import.meta.env.VITE_BACKEND_URL}/getNotes`,{mode:"cors",method:"POST",headers:{
         "Applicatiosn-Type":"application/json", 
         "Content-Type":"application/json"
       },
